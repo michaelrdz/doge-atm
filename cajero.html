@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Rodríguez" />
+    <meta name="Description" content="Cajero, practica de JS para el curso de programación básica de Platzi">
+    <title>DOGE ATM | Welcome</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section>
+        <main>
+            <header id="pageHeader">
+                <h1>WELCOME TO DOGE</h1>
+                <h3>Aavailable Cash:</h3>
+                <div id="availableCash"></div>
+            </header>
+            <div id="userForm">
+                <h2>Enter the amount you want:</h2>
+                <input name="txt_amount" id="txt_amount" type="number" min="0" step="20">
+                <button onclick="getCash()">GET CASH</button>
+                <h3 id="alert_EmptyATM" class="alert">* At the moment this ATM does not count enough cash *</h3>
+            </div>
+            <div id="petitionCash">
+                <h1>THANKS FOR USING DOGE</h1>
+                <h3>Please take your cash:</h3>
+                <div id="petitionCashLst"></div>
+                <button onclick="back()">EXIT</button>
+            </div>
+        </main>
+        <img alt="DOGE" src="assets/doge.png" class="footImage">
+        <footer>
+            <h4>By Michael Rodríguez (<a href="https://twitter.com/Michaelrdz_me" target="_blank">@michaelrdz.me</a>)<br>
+            Junio 2022</h4>
+        </footer>
+    </section>
+    <script src="cajero.js"></script>
+</body>
+</html>
